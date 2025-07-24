@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calendario Interactivo</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="icon" type="image/x-icon" href="./images/calendar.png">
+</head>
+<body>
+  <div class="calendar-container">
+    <header>
+      <button id="prev">←</button>
+      <h1 id="month-year"></h1>
+      <button id="next">→</button>
+    </header>
+
+    <div class="weekdays">
+      <div>Dom</div><div>Lun</div><div>Mar</div><div>Mié</div><div>Jue</div><div>Vie</div><div>Sáb</div>
+    </div>
+
+    <div id="calendar"></div>
+  </div>
+
+  <!-- Modal para notas -->
+  <div id="note-modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="close-modal">&times;</span>
+      <h2 id="modal-date"></h2>
+      <textarea id="note-text" placeholder="Escribe una nota..."></textarea>
+      <button id="save-note">Guardar</button>
+    </div>
+  </div>
+  <footer>
+        <div class="redes">
+            <p>&copy; Interactive Calendar<br>Hecho con ❤️ por mi. 2025 Julio César Yañez M. Todos los derechos 
+                reservados.</p>   
+                <a href="mailto:jcesar206@hotmail.com">Email
+                    <img src="./images/iconHotmail.png" alt="Email">
+                </a>
+                <a href="https://github.com/JCesar206" target="_blank">GitHub
+                    <img src="./images/iconGitHub.jpg" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/jcesar206" target="_blank">LinkedIn
+                    <img src="./images/iconLinkedIn.png" alt="LinkedIn">
+                </a>
+        </div>
+    </footer>
+  <script src="./scripts/script.js"></script>
+</body>
+</html>
